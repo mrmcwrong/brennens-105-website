@@ -1,0 +1,29 @@
+---
+title: Report
+---
+
+TODO: Write your report in this `report.qmd` file using markdown syntax.
+
+## What this was lab about
+
+TODO: Briefly summarize what this lab was about and what you did at a high level.
+
+## Methods
+
+TODO: Briefly talk about the methods you used to gather the data and any specific functions that helped reveal the patterns.
+
+## Findings
+
+TODO: Briefly restate what you found out about your classmates by exploring the data. 
+
+TODO: Briefly restate what your found out about your site usage by exploring the Google Analytics Data.
+
+Please refer to the figures you made in the notebook by title. For example, "As shown in figure 1..."
+
+## Discussion
+
+TODO: Briefly mention how data gathering can help you answer specific questions.
+
+## Future directions
+
+TODO: Briefly state what could be explored within the data in the future, building on what you already did. Your answer must be something that you could actually do with the data, related to this lab.

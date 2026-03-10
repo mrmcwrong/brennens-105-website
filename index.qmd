@@ -1,0 +1,92 @@
+---
+title: Data Analytics Lab
+---
+
+This lab is about gathering survey data and web usage data.
+
+What you are looking at right now is a [Quarto](https://quarto.org/docs/websites) website.
+This site will hold and display information that you create from a Google Survey, a python notebook file
+and a markdown report. The tabs across the top of the webpage should be showing those categories already.
+
+To get started, click through the various tabs to read further T O D Os.
+
+## Goals
+
+Your goals are:
+
+- Gather data via a survey
+- Gather data via web analytics
+- Explore the data
+
+Don't forget to answer all `T O D O` markers and to remove the markers.
+
+## Deadline
+
+This lab should be completed by the end of the lab meeting. However, you may make modifications until the official deadline of 4:15 PM on March 24.
+
+## Learning Outcomes
+
+By completing this lab you will
+
+- write markdown in a website
+- embed a Google Survey in this website
+- add a Google Analytics Tracking number into this website
+- download gathered data from analytics and survey
+- explore the data
+
+## Reminders
+
+- If needed, one of four available automatic extension **tokens** can be applied by using the form on the course syllabus.
+- If you have a question, post in the 105 Discord channel.
+
+## Saving Your Work
+
+Saving your work and making it accessible is a required part of all labs.
+
+### Accessability Part 1
+
+<font color="red">Ensure the CSV filename from your survey is `data_survey.csv` and located in the data directory.</font>
+
+<font color="red">Ensure the CSV filename from your web analytics is `data_analytics.csv` and located in the data directory.</font>
+
+Update the Colab filename to be `data_analytics.ipynb`.
+
+Make sure that all cells have been executed and are SHOWING their outputs.
+
+### Saving
+
+I would recommend a workflow of `Copy to Drive --> editing/running/testing --> downloading`. You should have already hit `Copy to Drive`, but if you haven't, then please do so now. Then go ahead and download the file from the menu at the top of the Colab interface. File > Download > Download ipynb
+
+<font color="red">From Google Sheets, download the sheets in CSV format.</font>
+
+### Accessibility Part 2
+
+If you are satisfied with your work, you can now upload the downloaded file to your GitHub repo!
+
+- Use GitHub to upload the file.
+  - Next to the green code button in GitHub, you will see an `add file` button. Click that, then choose the downloaded notebook from your computer.
+
+<font color="red">Upload the CSV files to GitHub inside the `data` directory.</font>
+
+## Checking Your Work
+
+### Check your file output
+
+Once your file is uploaded, please open it on GitHub. All the outputs and plots should be showing. If they are not showing, this means that not all code cells were executed before you downloaded your file.
+
+<font color="red">
+
+### Check Your Website
+
+Please check how the website renders by going to the URL for your site. If something is rendering
+incorrectly, refer back with the starter repo and post questions on Discord. 
+
+Your google form (Questionnaire tab), your python notebook (Analytics tab), and your data (Data tab), and your report (Report tab) should all be showing.
+
+</font>
+
+### Check GitHub Actions
+
+In GitHub, go to the Actions tab. Click on the top Action to see a report about your T O D Os. If the T O D Os have been done and deleted, then the actions will show that gatorgrade reports 100%. This is not your grade, but it is a good indication that you did not forget to do something.
+
+If you see remaining T O D Os, then you may want to edit and update your files.

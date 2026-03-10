@@ -1,0 +1,21 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: EXPLORER
+  google-analytics: TODO
+  navbar:
+    left:
+      - href: index.qmd
+        text: Instructions
+      - analytics.qmd
+      - questionnaire.qmd
+      - data.qmd
+      - report.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true

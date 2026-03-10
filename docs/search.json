@@ -1,0 +1,121 @@
+[
+  {
+    "objectID": "analytics.html",
+    "href": "analytics.html",
+    "title": "Analytics",
+    "section": "",
+    "text": "TODO: Make a google analytics account if you have not already done so\n\ngo to https://analytics.google.com\nunder settings, you should be able to make an account\nthen make a specific property for your website\nthen make stream for your website\n\nclick on web \npaste in your website’s url\n\n\nTODO: in _quarto.yml update the Google Analytics tracking number on line 7 with the tracking number that Google Analytics provides.\nPlease save your work and check that the tracking number is working before continuing on to the TODOs in the Questionnaire tab. You will return later to the notebook file.\n\n\n\n\n\n\nOpen In Colab\n\n\n\n# load pre-existing tools available for data exploration\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\nfrom ipywidgets import interact # pre existing code for interaction\n\n\n# TODO: Upload your downloaded CSV files to this Colab environment\n\n# Do this by going over to the file icon on the left. Then, toward\n# the top, find the file upload icon and upload your csv files.\n\n# NOTE: the CSV file must have the exact names data_survey.csv and data_analytics.csv\n\n\n# data_analytics.csv\n\n# TODO: update the column names to match the names you have in your csv file for data_analytics\n\n# create a pandas dataframe\ndfa = pd.read_csv(\n    '/content/data_analytics.csv',\n    sep=',',\n    names = ['TODO', 'Replace', 'Your', 'Column names', 'Here', 'separated by commas as needed'],\n    skiprows=1\n)\n\n# Display the first few rows of the DataFrame\nprint(dfa.head())\n\n\n# data_survey.csv\n\n# TODO: update the column names to match the names you have in your csv file for data_survey\n\n# create a pandas dataframe\ndfs = pd.read_csv(\n    '/content/data_survey.csv',\n    sep=',',\n    names = ['TODO', 'Replace', 'Your', 'Column names', 'Here', 'separated by commas as needed'],\n    skiprows=1\n)\n\n# Display the first few rows of the DataFrame\nprint(dfs.head())\n\n\n# TODO: how many rows and columns are in the dataframe dfa?\n# TODO: how many rows and columns are in the dataframe dfs?\n\n\n# Analytics\n\n# TODO: Do one or more explorations with dfa\n# no interaction is required\n\n# make a blank canvas\n\n# make a title starting with 'Figure 1:' Fill in a relevant title\nplt.title('TODO')\n\n# plot\n# ylabel\n# xlabel\n# ylim\n# etc.\n\n# reveal everything\n\n\n# Survey\n\n# TODO: Do one or more explorations with dfs\n# no interaction is required\n\n# make a blank canvas\n\n# make a title starting with 'Figure 2:' Fill in a relevant title\nplt.title('TODO')\n\n# plot\n# ylabel\n# xlabel\n# ylim\n# etc.\n\n# reveal everything\n\n\n# When you are satisfied with your figures, write up your report in the file called report.qmd\n\nSource: load pre-existing tools available for data exploration"
+  },
+  {
+    "objectID": "questionnaire.html",
+    "href": "questionnaire.html",
+    "title": "Questionnaire",
+    "section": "",
+    "text": "What you see below is a sample Google Form.\nTODO: In your own Google Account, please create your own form to gather data from your classmates when they visit your website.\nTODO: Read through the sample instructions, then continue.\n\nLoading…\n\nTODO: To embed your own form, replace the link with your own form’s embed link. To get the embed link, on the google form creation page, click on the three vertical dots on the far right. There you will see an option for the embed code. Copy the code and swap it in for the equivalent code above.\nTODO: At this point, check to see who has their surveys up, and go ahead and give them your data! All urls from classmates’ websites can be found at the link.\nTODO: Please do at least every survey!\nTODO: Check off those that you have done.\nTODO: You can now check to see your data. If you have responses from 15+ people, download the CSV files using the names data_survey.csv and data_analytics.csv.\nTODO: If you reupload those files into your GitHub Repos under the data directory, the Data tab should show your data!!\nTODO: Now find the ipynb file in your GitHub repo and continue with the TODOs."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Data Analytics Lab",
+    "section": "",
+    "text": "This lab is about gathering survey data and web usage data.\nWhat you are looking at right now is a Quarto website. This site will hold and display information that you create from a Google Survey, a python notebook file and a markdown report. The tabs across the top of the webpage should be showing those categories already.\nTo get started, click through the various tabs to read further T O D Os."
+  },
+  {
+    "objectID": "index.html#goals",
+    "href": "index.html#goals",
+    "title": "Data Analytics Lab",
+    "section": "Goals",
+    "text": "Goals\nYour goals are:\n\nGather data via a survey\nGather data via web analytics\nExplore the data\n\nDon’t forget to answer all T O D O markers and to remove the markers."
+  },
+  {
+    "objectID": "index.html#deadline",
+    "href": "index.html#deadline",
+    "title": "Data Analytics Lab",
+    "section": "Deadline",
+    "text": "Deadline\nThis lab should be completed at the end of the lab meeting time, but modifications may be made until the official deadline of 4:15pm on March 17th."
+  },
+  {
+    "objectID": "index.html#learning-outcomes",
+    "href": "index.html#learning-outcomes",
+    "title": "Data Analytics Lab",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\nBy completing this lab you will\n\nwrite markdown in a website\nembed a Google Survey in this website\nadd a Google Analytics Tracking number into this website\ndownload gathered data from analytics and survey\nexplore the data"
+  },
+  {
+    "objectID": "index.html#reminders",
+    "href": "index.html#reminders",
+    "title": "Data Analytics Lab",
+    "section": "Reminders",
+    "text": "Reminders\n\nIf needed, one of four available automatic extension tokens can be applied by using the form on the course syllabus.\nIf you have a question, post in the 105 Discord channel."
+  },
+  {
+    "objectID": "index.html#saving-your-work",
+    "href": "index.html#saving-your-work",
+    "title": "Data Analytics Lab",
+    "section": "Saving Your Work",
+    "text": "Saving Your Work\nSaving your work and making it accessible is a required part of all labs.\n\nAccessability Part 1\nEnsure the CSV filename from your survey is data_survey.csv and located in the data directory.\nEnsure the CSV filename from your web analytics is data_analytics.csv and located in the data directory.\nUpdate the Colab filename to be data_analytics.ipynb.\nMake sure that all cells have been executed and are SHOWING their outputs.\n\n\nSaving\nI would recommend a workflow of Copy to Drive --&gt; editing/running/testing --&gt; downloading. You should have already hit Copy to Drive, but if you haven’t, then please do so now. Then go ahead and download the file from the menu at the top of the Colab interface. File &gt; Download &gt; Download ipynb\nFrom Google Sheets, download the sheets in CSV format.\n\n\nAccessibility Part 2\nIf you are satisfied with your work, you can now upload the downloaded file to your GitHub repo!\n\nUse GitHub to upload the file.\n\nNext to the green code button in GitHub, you will see an add file button. Click that, then choose the downloaded notebook from your computer.\n\n\nUpload the CSV files to GitHub inside the data directory."
+  },
+  {
+    "objectID": "index.html#checking-your-work",
+    "href": "index.html#checking-your-work",
+    "title": "Data Analytics Lab",
+    "section": "Checking Your Work",
+    "text": "Checking Your Work\n\nCheck your file output\nOnce your file is uploaded, please open it on GitHub. All the outputs and plots should be showing. If they are not showing, this means that not all code cells were executed before you downloaded your file.\n\n\n\nCheck Your Website\nPlease check how the website renders by going to the URL for your site. If something is rendering incorrectly, refer back with the starter repo and post questions on Discord.\nYour google form (Questionnaire tab), your python notebook (Analytics tab), and your data (Data tab), and your report (Report tab) should all be showing.\n\n\n\nCheck GitHub Actions\nIn GitHub, go to the Actions tab. Click on the top Action to see a report about your T O D Os. If the T O D Os have been done and deleted, then the actions will show that gatorgrade reports 100%. This is not your grade, but it is a good indication that you did not forget to do something.\nIf you see remaining T O D Os, then you may want to edit and update your files."
+  },
+  {
+    "objectID": "data.html#raw-analytics-data",
+    "href": "data.html#raw-analytics-data",
+    "title": "Data",
+    "section": "Raw Analytics Data",
+    "text": "Raw Analytics Data"
+  },
+  {
+    "objectID": "report.html",
+    "href": "report.html",
+    "title": "Report",
+    "section": "",
+    "text": "TODO: Write your report in this report.qmd file using markdown syntax."
+  },
+  {
+    "objectID": "report.html#what-this-was-lab-about",
+    "href": "report.html#what-this-was-lab-about",
+    "title": "Report",
+    "section": "What this was lab about",
+    "text": "What this was lab about\nTODO: Briefly summarize what this lab was about and what you did at a high level."
+  },
+  {
+    "objectID": "report.html#methods",
+    "href": "report.html#methods",
+    "title": "Report",
+    "section": "Methods",
+    "text": "Methods\nTODO: Briefly talk about the methods you used to gather the data and any specific functions that helped reveal the patterns."
+  },
+  {
+    "objectID": "report.html#findings",
+    "href": "report.html#findings",
+    "title": "Report",
+    "section": "Findings",
+    "text": "Findings\nTODO: Briefly restate what you found out about your classmates by exploring the data.\nTODO: Briefly restate what your found out about your site usage by exploring the Google Analytics Data.\nPlease refer to the figures you made in the notebook by title. For example, “As shown in figure 1…”"
+  },
+  {
+    "objectID": "report.html#discussion",
+    "href": "report.html#discussion",
+    "title": "Report",
+    "section": "Discussion",
+    "text": "Discussion\nTODO: Briefly mention how data gathering can help you answer specific questions."
+  },
+  {
+    "objectID": "report.html#future-directions",
+    "href": "report.html#future-directions",
+    "title": "Report",
+    "section": "Future directions",
+    "text": "Future directions\nTODO: Briefly state what could be explored within the data in the future, building on what you already did. Your answer must be something that you could actually do with the data, related to this lab."
+  },
+  {
+    "objectID": "data_analytics.html",
+    "href": "data_analytics.html",
+    "title": "EXPLORER",
+    "section": "",
+    "text": "Open In Colab\n\n\n\n# load pre-existing tools available for data exploration\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\nfrom ipywidgets import interact # pre existing code for interaction\n\n\n# TODO: Upload your downloaded CSV files to this Colab environment\n\n# Do this by going over to the file icon on the left. Then, toward\n# the top, find the file upload icon and upload your csv files.\n\n# NOTE: the CSV file must have the exact names data_survey.csv and data_analytics.csv\n\n\n# data_analytics.csv\n\n# TODO: update the column names to match the names you have in your csv file for data_analytics\n\n# create a pandas dataframe\ndfa = pd.read_csv(\n    '/content/data_analytics.csv',\n    sep=',',\n    names = ['TODO', 'Replace', 'Your', 'Column names', 'Here', 'separated by commas as needed'],\n    skiprows=1\n)\n\n# Display the first few rows of the DataFrame\nprint(dfa.head())\n\n\n# data_survey.csv\n\n# TODO: update the column names to match the names you have in your csv file for data_survey\n\n# create a pandas dataframe\ndfs = pd.read_csv(\n    '/content/data_survey.csv',\n    sep=',',\n    names = ['TODO', 'Replace', 'Your', 'Column names', 'Here', 'separated by commas as needed'],\n    skiprows=1\n)\n\n# Display the first few rows of the DataFrame\nprint(dfs.head())\n\n\n# TODO: how many rows and columns are in the dataframe dfa?\n# TODO: how many rows and columns are in the dataframe dfs?\n\n\n# Analytics\n\n# TODO: Do one or more explorations with dfa\n# no interaction is required\n\n# make a blank canvas\n\n# make a title starting with 'Figure 1:' Fill in a relevant title\nplt.title('TODO')\n\n# plot\n# ylabel\n# xlabel\n# ylim\n# etc.\n\n# reveal everything\n\n\n# Survey\n\n# TODO: Do one or more explorations with dfs\n# no interaction is required\n\n# make a blank canvas\n\n# make a title starting with 'Figure 2:' Fill in a relevant title\nplt.title('TODO')\n\n# plot\n# ylabel\n# xlabel\n# ylim\n# etc.\n\n# reveal everything\n\n\n# When you are satisfied with your figures, write up your report in the file called report.qmd"
+  }
+]

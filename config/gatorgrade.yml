@@ -1,0 +1,40 @@
+setup: |
+  echo "Done installing project dependencies!"
+---
+
+# Reminder for ^^^:
+# All commands executed in the setup block are done in a
+# one-by-one fashion from the current working directory. This means
+# that there is no history associated with running the commands and
+# thus multiple commands must be run in a single chain.
+
+# perform checks on a file
+- index.qmd:
+    - description: Ensure that the index.qmd file exists
+      check: ConfirmFileExists
+    - description: Complete all TODOs, remove the TODO markers in index.qmd
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+
+- _quarto.yml:
+    - description: Ensure that the _quarto.yml file exists
+      check: ConfirmFileExists
+    - description: Complete all TODOs, remove the TODO markers in _quarto.yml
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+
+- data_analytics.ipynb:
+    - description: Ensure that the data_analytics.ipynb file exists
+      check: ConfirmFileExists
+    - description: Complete all TODOs, remove the TODO markers in data_analytics.ipynb
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
